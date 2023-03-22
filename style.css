@@ -98,6 +98,9 @@ body {
   /* margin: 0 auto; */
   width: 100%;
 }
+/*****************************************************************
+                               main card CSS
+*****************************************************************/
 .card {
   background-color: var(--Dark-Blue);
   border-radius: 20px;
@@ -105,11 +108,11 @@ body {
   box-shadow: 0px 0px 17px -1px #999999;
   /* display: grid;
   place-content: center; */
-/* 
+  /* 
   width: 100%;
   height: 100%; */
   padding: 2rem;
-  max-width: 30%;
+  max-width: 25%;
 }
 .star {
   background-color: var(--Light-Grey);
@@ -145,16 +148,19 @@ body {
   width: 40px;
   border-radius: 50%;
   transition: all 0.3s ease-out;
- display: flex;
- justify-content: center;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.1rem;
 }
-input[type="radio"]{
+input[type="radio"] {
   appearance: none;
- 
-
-
+}
+input[type="radio"]::before{
+  background-color: var(--Orange);
+}
+input[type="radio"]::after{
+  background-color: var(--White);
 }
 .radio:hover {
   cursor: pointer;
@@ -169,12 +175,60 @@ input[type="radio"]{
   gap: 1.25em;
   border-radius: 20px;
   width: 100%;
-text-transform: uppercase;
-min-width: 11rem;
-height: 2.5rem;
+  text-transform: uppercase;
+  min-width: 11rem;
+  height: 2.5rem;
 }
 .submit:hover {
   cursor: pointer;
   color: var(--Orange);
   background-color: var(--White);
+}
+/*****************************************************************
+                        Thank you card CSS
+*****************************************************************/
+.thankyou-card{
+  background-color: var(--Dark-Blue);
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 17px -1px #999999;
+  box-shadow: 0px 0px 17px -1px #999999;
+  /* display: grid;
+  place-content: center; */
+  /* 
+  width: 100%;
+  height: 100%; */
+  padding: 2rem;
+  max-width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.result-submited{
+  background-color: var(--Very-Dark-Blue);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  min-width: 15rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--Orange);
+}
+.rating{
+
+}
+.thank{
+  color: var(--White);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.message{
+ color: var(--White);
+ line-height: 2rem;
+ font-weight: 400;
+ font-size: 1rem;
+ text-align: center;
+ 
 }

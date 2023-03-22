@@ -100,7 +100,7 @@ body {
 }
 .card {
   background-color: var(--Dark-Blue);
-  border-radius: 10px;
+  border-radius: 20px;
   -webkit-box-shadow: 0px 0px 17px -1px #999999;
   box-shadow: 0px 0px 17px -1px #999999;
   /* display: grid;
@@ -122,7 +122,7 @@ body {
   margin-bottom: 1rem;
 }
 .title {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
   color: var(--White);
   margin-bottom: 1rem;

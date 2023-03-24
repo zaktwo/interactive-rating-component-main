@@ -112,7 +112,7 @@ body {
   width: 100%;
   height: 100%; */
   padding: 2rem;
-  max-width: 25%;
+  max-width: 25rem;
 }
 .star {
   background-color: var(--Light-Grey);
@@ -142,7 +142,19 @@ body {
   align-items: center;
   margin-bottom: 1rem;
 }
-.radio {
+/* .radio {
+  background-color: var(--Light-Grey);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transition: all 0.3s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+} */
+input[type="radio"] {
+  appearance: none;
   background-color: var(--Light-Grey);
   height: 40px;
   width: 40px;
@@ -153,19 +165,16 @@ body {
   align-items: center;
   font-size: 1.1rem;
 }
-input[type="radio"] {
-  appearance: none;
-}
-input[type="radio"]::before{
+input[type="radio"]:hover{
   background-color: var(--Orange);
 }
-input[type="radio"]::after{
+input[type="radio"]:focus-visible{
   background-color: var(--White);
 }
-.radio:hover {
+/* .radio:hover {
   cursor: pointer;
   color: var(--Orange);
-}
+} */
 .submit {
   margin-top: 1rem;
   border: 0;
@@ -198,8 +207,8 @@ input[type="radio"]::after{
   width: 100%;
   height: 100%; */
   padding: 2rem;
-  max-width: 25%;
-  display: flex;
+  max-width: 25rem;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;

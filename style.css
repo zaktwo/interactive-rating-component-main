@@ -143,17 +143,24 @@ body {
   margin-bottom: 1rem;
 }
 /* .radio {
-  background-color: var(--Light-Grey);
+   background-color: var(--Light-Grey);
   height: 40px;
   width: 40px;
   border-radius: 50%;
   transition: all 0.3s ease-out;
-  display: flex;
+  font-size: 1.1rem;
+   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.1rem;
-} */
+  appearance: none;
+}
+.radio > label {
+  justify-content: center;
+  align-items: center;
+}  */
+
 input[type="radio"] {
+  content:"";
   appearance: none;
   background-color: var(--Medium-Grey);
   height: 40px;
@@ -162,15 +169,20 @@ input[type="radio"] {
   transition: all 0.3s ease-out;
   display: flex;
   justify-content: center;
+  align-items: center; 
+   font-size: 1.1rem;
+}
+input[type="radio"] > label {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  font-size: 1.1rem;
 }
 input[type="radio"]:hover{
   cursor: pointer;
   background-color: var(--Orange);
 }
-input[type="radio"]:focus-visible{
-  background-color: var(--White);
+input[type="radio"]:focus{
+  background-color: var(--White)
 }
 /* .radio:hover {
   cursor: pointer;

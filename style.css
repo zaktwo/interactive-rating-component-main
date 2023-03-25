@@ -142,24 +142,31 @@ body {
   align-items: center;
   margin-bottom: 1rem;
 }
-/* .radio {
+/* 
+This is how many attempts i tried until alex from frontend mentor 
+help me with this issue and pointed that i should style Label not
+radio
+
+.radio {
    background-color: var(--Light-Grey);
   height: 40px;
   width: 40px;
   border-radius: 50%;
   transition: all 0.3s ease-out;
   font-size: 1.1rem;
-   display: flex;
-  justify-content: center;
-  align-items: center;
+   display: grid;
+  place-content: center;
   appearance: none;
-}
-.radio > label {
+} 
+ .radio > label {
   justify-content: center;
   align-items: center;
-}  */
-
+}  
 input[type="radio"] {
+  content:"";
+  appearance: none;
+} 
+ input[type="radio"] {
   content:"";
   appearance: none;
   background-color: var(--Medium-Grey);
@@ -171,23 +178,61 @@ input[type="radio"] {
   justify-content: center;
   align-items: center; 
    font-size: 1.1rem;
+   position: relative;
 }
-input[type="radio"] > label {
+input[type="radio"] + label>span {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
+ 
 }
 input[type="radio"]:hover{
   cursor: pointer;
   background-color: var(--Orange);
 }
-input[type="radio"]:focus{
-  background-color: var(--White)
+input[type="radio"]:checked{
+  background-color: var(--White);
+}  
+ .radio:focus-visible{
+  background-color: var(--White);
 }
-/* .radio:hover {
+.radio:hover {
   cursor: pointer;
-  color: var(--Orange);
+  background-color: var(--Orange);
+}
+.radio-label {
+  display: grid;
+  place-content: center;
 } */
+input[type="radio"]{
+  appearance: none;
+  content: "";
+}
+input[type="radio"] + label {
+  display: grid;
+  place-items: center;
+  padding: 0.5em;
+  height: 40px;
+  width: 40px;
+  background-color: var(--Very-Dark-Blue);
+  border-radius: 50%;
+  transition: all 0.3s ease-out;
+  color: var(--Light-Grey);
+}
+
+input[type="radio"]:checked + label {
+  background-color: var(--Orange);
+  cursor: pointer;
+  color: var(--White);
+}
+input[type="radio"]:hover + label{
+  cursor: pointer;
+  background-color: var(--White);
+  color: var(--White);
+}
+input[type="radio"]:focus-visible + label{
+  background-color: var(--Orange);
+}
 .submit {
   margin-top: 1rem;
   border: 0;

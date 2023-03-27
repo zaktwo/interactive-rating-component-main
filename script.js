@@ -1,5 +1,5 @@
 const rating = document.getElementsByClassName(".radio-label");
-const submitBtn = document.getElementsByClassName(".submit");
+const submitBtn = document.querySelector(".submit");
 const ratingPoint = document.getElementsByClassName(".rating");
 const topCard = document.querySelector(".card");
 const thankYou = document.querySelector(".thankyou-card");
@@ -16,3 +16,16 @@ rating.forEach((rating) => {
     });
 
 });
+
+submitBtn.forEach((submitBtn) => {
+   
+    submitBtn.addEventListener("click", ()=> {
+        // if( submitBtn){
+            // topCard.classList.remove("hiddent");
+            topCard.style.display ="none";
+            thankYou.classList.remove("hidden");
+            thankYou.style.display = "block";
+            
+        // } 
+    })
+})

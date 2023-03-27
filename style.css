@@ -101,6 +101,9 @@ body {
 /*****************************************************************
                                main card CSS
 *****************************************************************/
+.hiddent {
+  display: block;
+}
 .card {
   background-color: var(--Dark-Blue);
   border-radius: 20px;
@@ -227,7 +230,7 @@ input[type="radio"] + label {
   transition: all 0.3s ease-out;
   color: var(--Light-Grey);
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 input[type="radio"]:checked + label {
@@ -268,7 +271,7 @@ input[type="radio"]:focus-visible + label{
                         Thank you card CSS
 *****************************************************************/
 .hidden{
-  visibility: hidden;
+  display: none;
 }
 .thankyou-card{
   
@@ -283,7 +286,7 @@ input[type="radio"]:focus-visible + label{
   height: 100%; */
   padding: 2rem;
   max-width: 25rem;
-  display: none;
+ 
   justify-content: center;
   align-items: center;
   flex-direction: column;

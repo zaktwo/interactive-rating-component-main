@@ -37,7 +37,7 @@
 // })
 
 
-const form = document.querySelector(".form");
+const form = document.querySelector(".container");
 const thankCard = document.querySelector(".thankyou-card");
 const ratingCard = document.querySelector(".card");
 const ratingBtns = document.querySelectorAll("input[type = radio]");
@@ -47,13 +47,13 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
   ratingCard.classList.add("hidden");
   thankCard.classList.remove("hidden");
-  const selectedRate = form.rating.value;
+  const selectedRate = container.radio.value;
   ratingTxt.textContent = `You selected ${selectedRate} out of 5`;
 });
 
-ratingBtns.forEach((btn) => {
-  btn.addEventListener("change", function () {
-    document.querySelector(".submit__btn").removeAttribute("disabled");
+ratingBtns.forEach((submit) => {
+  submit.addEventListener("change", function () {
+    document.querySelector(".submit").removeAttribute("disabled");
   });
 });
 

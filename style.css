@@ -101,9 +101,7 @@ body {
 /*****************************************************************
                                main card CSS
 *****************************************************************/
-.hiddent {
-  display: block;
-}
+
 .card {
   background-color: var(--Dark-Blue);
   border-radius: 20px;

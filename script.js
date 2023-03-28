@@ -45,8 +45,7 @@ const ratingTxt = document.querySelector(".result-submited");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-  ratingCard.classList.add("hidden");
-  thankCard.classList.remove("hidden");
+  
   const selectedRate = container.radio.value;
   ratingTxt.textContent = `You selected ${selectedRate} out of 5`;
 });
@@ -54,6 +53,8 @@ form.addEventListener("submit", function (e) {
 ratingBtns.forEach((submit) => {
   submit.addEventListener("change", function () {
     document.querySelector(".submit").removeAttribute("disabled");
+    ratingCard.classList.add("hidden");
+  thankCard.classList.remove("hidden");
   });
 });
 

@@ -1,8 +1,8 @@
 // const rating = document.querySelector('.form');
-const submitBtn = document.querySelector('.submit');
-const ratingPoint = document.getElementsByClassName('.rating');
-const topCard = document.querySelector('.card');
-const thankYou = document.querySelector('.thankyou-card');
+// const submitBtn = document.querySelector('.submit');
+// const ratingPoint = document.getElementsByClassName('.rating');
+// const topCard = document.querySelector('.card');
+// const thankYou = document.querySelector('.thankyou-card');
 
 // let rate = null;
 
